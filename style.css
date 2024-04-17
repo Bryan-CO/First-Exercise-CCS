@@ -1,0 +1,118 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    background: #F3E5D8;
+    padding: 10vh 50vh 10vh 50vh;
+
+    color: #726E6C;
+    font-family: outfit;
+}
+
+hr{
+    border: none;
+    background-color: #E0E0E0;
+    height: 1px;
+}
+
+.main-cabecera header img{
+    width: 100%;
+}
+
+.main-cabecera header section{
+    background: #FFF7FC;
+    padding: 3vh;
+}
+.main-principal{
+    background-color: white;
+    padding: 4vh;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.main-cabecera header img, .main-cabecera header section{
+    border-radius: 15px;
+}
+
+.list-time-preparation li::marker{
+    color: #62233D;
+}
+
+.list-time-preparation li{
+    margin-bottom: 10px;
+}
+
+.list-ingredients li::marker, .list-instructions li::marker{
+    color: #6A3A35;
+    font-weight: bold;
+    font-family: outfit;
+}
+
+.list-time-preparation li, .list-ingredients li,  .list-instructions li{
+    margin-bottom: 10px;
+}
+
+h1, h2{
+    
+    font-family: young-serif;
+    font-weight: 100;
+}
+
+h1{
+    color: #282725;
+}
+
+h2{
+    color: #77453B;
+}
+
+h3{
+    color: #7E4F64;
+    margin: 0;
+}
+
+table{
+    border-spacing:10px 10px;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+.tbl-nutrition tbody tr{
+    border-bottom: 1px solid #EAEAEA;
+}
+.tbl-nutrition tbody tr td{
+    padding: 10px 20px 10px 20px;
+}
+
+.tbl-nutrition tbody tr:last-child{
+    border-bottom: none;
+}
+.tbl-nutrition tbody tr td:last-child{
+    color: #7E4F64;
+}
+
+@font-face {
+    font-family: outfit;
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: young-serif;
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+@media (max-width: 800px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .main-principal{
+        padding: 0;
+        border-radius: 0;
+    }
+    .main-cabecera header img{
+        border-radius: 0;
+    }
+    .main-cabecera header div, .main-contenido{
+        padding: 0 4vh 4vh 4vh;
+    }
+}
